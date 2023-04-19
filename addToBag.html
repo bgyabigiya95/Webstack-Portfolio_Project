@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./addToBag.css">
+    <link rel="icon" href="./images/PoshStorm.png" type="icon">
+    <link rel="stylesheet" href="./new_arrivals.css">
+    <script src="https://kit.fontawesome.com/343e85a50f.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- Navbar************************* -->
+    <header>
+        <div class="top">
+            <h4 class><b>Shipping outside of the U.S. or Canada? </b><a
+                    href="https://www.nordstrom.com/browse/customer-service/international-orders?jid=j011535-13614&cid=00000&cm_sp=merch-_-multi-div_13614_j011535-_-swptcos_corp_persnav_info&#anchor-link-shipping-charges">Learn
+                    About International Shipping</a></h4>
+            <div class="country"><img src="home_images/india.png" alt=""><b><u>INDIA</u></b></div>
+        </div>
+        <div class="firstnav">
+            <div class="logo"><a href="./index.html"><img src="home_images/logo 4.png" alt=""></a></div>
+            <div class="search">
+                <img id="searchicon" src="home_images/search.png" alt="">
+                <input id="searchfun" onkeyup="searchall()" type="text" placeholder="Search for products or brands">
+            </div>
+            <div class="sign">
+                <a href="./signIn.html"> Sign In</a>
+                <div class="hovering1">
+                    <button><b>Sign In|Create Account</b></button>
+                    <hr>
+                    <h3><b>Your Account</b></h3>
+                    <hr>
+                    <div class="youracc1">Purchase</div>
+                    <hr>
+                    <div class="youracc2">Wish List</div>
+                    <hr>
+                    <div class="youracc3">The Poshy Club Rewards</div>
+                    <hr>
+                    <div class="youracc4">Shipping Address</div>
+                    <hr>
+                    <div class="youracc5">Payment Methods</div>
+                    <hr>
+                    <div class="youracc6">Your Stylist</div>
+                    <hr>
+                    <div class="youracc7">Pay & Manage Poshstorm</div>
+
+                </div>
+
+
+            </div>
+            <div class="store">
+                <a href="#"><img src="home_images/shopping-bag.png" alt="">Store</a>
+            </div>
+            <div class="purchase">
+                <a href="#"><img src="home_images/cart.png" alt="">Purchase</a>
+            </div>
+            <div class="cart">
+                <a id="numOfItemInCart" href="./addToBag.html"><img src="home_images/shopping-cart.png" alt=""><span>0</span></a>
+            </div>
+
+
+
+
+        </div>
+        <hr>
+    </header>
+<!-- ***************************Shopping bag Save for later***************************** -->
+<div id="main_div_cart">
+    <div id="shopping_bag">
+        <div>
+            <h3 id="#xxx">Shopping Bag</h3>
+        </div>
+        <div>
+            <h3>Saved For Later</h3>
+        </div>
+    </div>
+    <div id="items_not_on_hold">
+        <div>
+            <h2 >Shopping Bag</h2>
+        </div>
+        <div>
+            
+            <p>
+                Items in your bag are not on hold.
+            </p>
+        </div>
+    </div>
+    <div id="choose_gift">
+        <i class="fa-solid fa-gift"></i>&nbsp;&nbsp;
+        <p>
+            Choose gift options when you check out.
+        </p>
+    </div>
+    <!-- ***************************Cart Items***************************** -->
+    <div id="cart_items"></div>
+    <!-- ***********************************Checkout********************* -->
+    <div id="check_out">
+        <div>
+            <div>
+                <p>Accepted Payment Methods</p>
+            </div>
+            <div id="accepted_payments">
+                    <img src="./images/gpay.png" alt="">
+                    <img src="./images/mastercard.png" alt="">
+                    <img src="./images/paypal.png" alt="">
+                    <img src="./images/paytm.png" alt="">
+                    <img src="./images/visa.png" alt="">
+            </div>
+            <div>
+                <p>
+                    Need help? Call 1.888.282.6060 or <span><a href="#">chat with us</a></span>
+                </p>
+            </div>
+            <div>
+                <a href="#">Shipping internationally?</a>
+            </div>
+        </div>
+        <div>
+            <div id="subtotal_price">
+                <div><p>Subtotal</p></div>
+                <div id="total_price">INR *****</div>
+            </div>
+            <div>
+                <a href="./address.html"><button>Check Out</button></a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div style="display: flex;background-color: #f9f9f9;justify-content: space-around; height: 400px;margin-top: 25px;" class="footer">
+    <div style="display: flex;flex-direction: column;justify-content: space-between;">
+        <h3>Customer Service</h3>
+        <p>Contact Us</p>
+        <p>Order Stutus</p>
+        <p>Shipping</p>
+        <p>Return Policy</p>
+        <p>Price Adjustments</p>
+        <p>Gifts Cards</p>
+        <p>FAQ</p>
+        <p>Product Recalls</p>
+    </div>
+    <div style="display: flex;flex-direction: column;justify-content: space-between;">
+        <h3>About Us</h3>
+        <p>All Brands</p>
+        <p>Careers</p>
+        <p>Corporate Social <br>Responsibility </p>
+        <p>Diversity,Inclusion &<br>Belongings</p>
+        <p>Get Email Updates</p>
+        <p>NordStorm Blog</p>
+        <p>The Thread</p>
+        <p>Nordy Podcat</p>
+    </div>
+    <div style="display: flex;flex-direction: column;justify-content: space-between;">
+        <h3>Stores & Service</h3>
+        <p>Find a Store</p>
+        <p>Free Style Help</p>
+        <p>Alterations & <br> Tailoring</p>
+        <p>Pop-In Shop</p>
+        <p>Virtual Events</p>
+        <p>Spa NordStorm</p>
+        <p>NordStorm Restaurants</p>
+        <p>NordStorm Local</p>
+    </div>
+    <div style="display: flex;flex-direction: column;justify-content:flex-start;">
+        <h3 style="margin-top: 20px;">NordStorm Card & <br>Rewards</h3>
+        <p style="margin-top: 20px;">The Nordy Club</p>
+        <p style="margin-top: 20px;">Pay My Bill</p>
+        <p style="margin-top: 20px;">Manage My <br>NordStorm card</p>
+    </div>
+    <div style="display: flex;flex-direction: column;justify-content: space-between;">
+        <h3>NordStorm, Inc</h3>
+        <p>NordStorm Rack</p>
+        <p>NordStorm Canada</p>
+        <p>Investor Relations</p>
+        <p>Press Releases</p>
+        <p>NordStorm Media <br>Network</p>
+    </div>
+    <div style="display: flex;flex-direction: column;justify-content: flex-start; ">
+        <div style="display: flex; align-items: center;margin-top: 20px;">
+            <a href="https://www.nordstrom.com/browse/about/nordstrom-apps?origin=footer&cm_sp=corp-_-corp_CustomerService-_-globalfooternav_app"><img width="40px" src="home_images/playstore.png" alt=""></a>
+            <p>Get our apps</p>
+        </div>
+        <div style="display: flex; margin-top: 100px;">
+            <a href="https://www.instagram.com/nordstrom/?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_instagram"><img style="margin-left: 6px; " width="23px" src="home_images/instagramico.png" alt=""></a>
+            <a href="https://www.pinterest.com/nordstrom/?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_pinterest"><img style="margin-left: 6px;" width="23px" src="home_images/pinterest.png" alt=""></a>
+            <a href="http://twitter.com/nordstrom?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_twitter"><img style="margin-left: 6px;" width="23px" src="home_images/twitter.png" alt=""></a>
+            <a href="https://www.facebook.com/Nordstrom?origin=footer&cm_sp=corp-_-corp_socialmedia-_-globalfooternav_facebook"><img style="margin-left: 6px;" width="23px" src="home_images/facebook.png" alt=""></a>
+        </div>
+
+    </div>
+    <button id="top" style="color: white;background-color: black;width: 60px;height: 60px;align-self: center;">^ <br> Go to Top</button>
+
+</div>
+<div style="height: 100px;"></div>
+
+
+    
+    
+</body>
+</html>
+<script src="./addToBag.js"></script>

@@ -1,0 +1,241 @@
+header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    border-bottom: 3px solid black;
+}
+.top{
+    
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    
+    
+
+}
+.top img{
+    height: 20px;
+    width: 20px;
+}
+.top h4{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.top a{
+    text-decoration: none;
+    color: green;
+}
+.firstnav{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.logo img{
+    height: 80px;
+    width: 80px;
+    border-radius: 3%;
+    margin-left: 10px;
+}
+.search{
+    display: flex;
+    border: 1px solid black;
+    height: 40px;
+    align-items:center;
+}
+#searchicon{
+    height: 20px;
+    width: 20px;
+}
+
+
+.search input{
+    margin-left: 8px;
+    border: none;
+    width: 300px;
+    height: 90%;
+    text-align: left;
+    
+}
+.search input:focus{
+    outline: none;
+}
+.sign{
+    height: 30px;
+    
+}
+.sign a{
+    display: flex;
+    
+}
+
+.hovering1{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    position: absolute;
+    left: 640px;
+    top: 110px;
+    
+}
+.hovering1>div{
+    margin-top: 5px;
+}
+/* .sign:hover > .hovering1{
+    display: flex;
+} */
+
+
+.store img{
+    height: 40px;
+    
+}
+.purchase img{
+    height: 40px;
+     
+}
+.cart img{
+    height: 40px;
+     
+}
+#main_div_cart{
+    
+    width: 75%;
+    margin: auto;
+    margin-top: 200px;
+       
+}
+#cart_items>div>img{
+    width: 8%;
+    margin-bottom: 10px;
+}
+#cart_items>div>img:hover{
+    transform: scale(1.2);
+    cursor:pointer;
+}
+#shopping_bag{
+    display: flex;
+    flex-direction: row;
+}
+#shopping_bag>div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #e3e3e3;
+border-top: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+height: 50px;
+width: 300px;
+}
+#shopping_bag>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(192, 190, 190);
+    border-right: 1px solid rgb(192, 190, 190);
+    border-bottom: 1px solid rgb(192, 190, 190);
+    width: 300px;
+    height: 50px;
+    }
+
+    #items_not_on_hold{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        
+    }
+    #items_not_on_hold>div:nth-child(1){
+        margin-bottom: 6px;
+    }
+    #choose_gift{
+        display: flex;
+        margin-bottom: 5px;
+        width: 75%;
+        border-bottom: 2px solid rgb(218, 217, 217);
+    }
+
+    #cart_items>div{
+        border-bottom: 2px solid rgb(218, 217, 217);
+        padding: 15px 0px;
+        width: 75%;
+    }
+    #cart_items>div>h2{
+        margin-bottom: 15px;
+    }
+    #cart_items>div>p{
+        margin-bottom: 15px;
+    }
+   #check_out{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 20px;
+   }
+   #check_out>div:nth-child(1){
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+   }
+   #check_out>div:nth-child(1)>div{
+    margin-bottom: 17px;
+   }
+   a{
+    color: #3175b4;
+    font-size: 1.1rem;
+   }
+   button{
+    width: 350px;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    margin-top: 15px;
+   }
+   button:hover{
+    background-color: rgba(0,0,0,0.8);
+    cursor: pointer;
+   }
+   #subtotal_price{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-bottom: 2px solid rgb(218, 217, 217);
+   }
+   #accepted_payments{
+    display: flex;
+   
+   }
+   #accepted_payments>img{
+    height: fit-content;
+    margin-right: 10px;
+    margin-bottom: 10px;
+   
+   }
+  
+   #remove{
+   color: #5185b2;
+   }

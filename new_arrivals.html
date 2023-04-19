@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's New for Men | PoshStrom</title>
+    <link rel="icon" href="./images/PoshStorm.png" type="icon">
+    <link rel="stylesheet" href="./new_arrivals.css">
+    <link rel="stylesheet" href="./new_arivals_products.css">
+    <script src="https://kit.fontawesome.com/343e85a50f.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- ******************************Navbar********************************************* -->
+    <header>
+        <div class="top">
+            <h4 class><b>Shipping outside of the U.S. or Canada? </b><a
+                    href="https://www.nordstrom.com/browse/customer-service/international-orders?jid=j011535-13614&cid=00000&cm_sp=merch-_-multi-div_13614_j011535-_-swptcos_corp_persnav_info&#anchor-link-shipping-charges">Learn
+                    About International Shipping</a></h4>
+            <div class="country"><img src="home_images/india.png" alt=""><b><u>INDIA</u></b></div>
+        </div>
+        <div class="firstnav">
+            <div class="logo"><a href="./index.html"><img src="home_images/logo 4.png" alt=""></a></div>
+            <div class="search">
+                <img id="searchicon" src="home_images/search.png" alt="">
+                <input id="searchfun" onkeyup="searchall()" type="text" placeholder="Search for products or brands">
+            </div>
+            <div class="sign">
+                <a href="./signIn.html"> Sign In</a>
+                <div class="hovering1">
+                    <button><b>Sign In|Create Account</b></button>
+                    <hr>
+                    <h3><b>Your Account</b></h3>
+                    <hr>
+                    <div class="youracc1">Purchase</div>
+                    <hr>
+                    <div class="youracc2">Wish List</div>
+                    <hr>
+                    <div class="youracc3">The Poshy Club Rewards</div>
+                    <hr>
+                    <div class="youracc4">Shipping Address</div>
+                    <hr>
+                    <div class="youracc5">Payment Methods</div>
+                    <hr>
+                    <div class="youracc6">Your Stylist</div>
+                    <hr>
+                    <div class="youracc7">Pay & Manage Poshstorm</div>
+
+                </div>
+
+
+            </div>
+            <div class="store">
+                <a href="#"><img src="home_images/shopping-bag.png" alt="">Store</a>
+            </div>
+            <div class="purchase">
+                <a href="#"><img src="home_images/cart.png" alt="">Purchase</a>
+            </div>
+            <div class="cart">
+                <a id="numOfItemInCart" href="./addToBag.html"><img src="home_images/shopping-cart.png" alt=""><span>0</span></a>
+            </div>
+
+
+
+
+        </div>
+        <hr>
+    </header>
+
+   <!-- ********************************HOME/MEN/NEW ARRIVAL LINE************************** -->
+   <div id="home_men_new" style="margin-top: 138px;"> 
+        <span>Home</span>
+        <span>/</span>
+        <span>Men</span>
+        <span>/</span>
+        <span>Women</span>
+        <span>/</span>
+        <span>Furniture</span>
+        <span>/</span>
+        <span>Kids</span>
+   </div>
+   
+
+
+   <!-- **************************Products Part*********************************** -->
+   <div id="products_area">
+        <div id="left_panel">
+            <div class="left_panel_sorting" id="size_size"><h3>Brand</h3><span>+</span></div>
+            <div  id="size"></div>
+            <div id="color"><div class="left_panel_sorting" ><h3>Color</h3><span>+</span></div></div>
+            <div id="brand"><div class="left_panel_sorting" ><h3>Size</h3><span>+</span></div></div>
+            <div id="material"><div class="left_panel_sorting" ><h3>Material</h3><span>+</span></div></div>
+            <div  id="occassion"><div class="left_panel_sorting"><h3>Occassion</h3><span>+</span></div></div>
+           <div  id="price_"> <div class="left_panel_sorting"><h3>Price</h3><span>+</span></div></div>
+           <div  id="sale"> <div class="left_panel_sorting" ><h3>Sale</h3><span>+</span></div></div>
+           <div id="style"> <div class="left_panel_sorting" ><h3>Style</h3><span>+</span></div></div>
+        </div>
+      
+        <div>
+            <div id="mens_new_arrival">
+                <span><strong>Mens New Arrival</strong></span>
+            </div>
+     <!--***** All New Arrivals Clothing Shoes Accessories Grooming & Cologne Designer Collections***** -->
+            <div id="all_new">
+                
+                      <span onclick="all_products()">All New Arrivals </span>
+                      <span onclick="men()"> Men </span>
+                      <span onclick="women()"> Women </span>
+                      <span onclick="furniture()"> Furniture </span>
+                     <span onclick="kid()"> Kids </span>
+                      <!-- <span> Designer Collections </span> -->
+             </div>
+             <!-- ******************Sort********************************** -->
+
+             <div id="total_items_part">
+                <div><span >  <p id="loading_">Loading...</p></span></div>
+                <div>
+                    <select name="" onChange="sortFunctionality()">
+                        <option value="">Sort by Price</option>
+                        <option value="high_to_low">Sort by price: high to low</option>
+                        <option value="low_to_high">Sort by price: low to high</option>
+                    </select>
+                </div>
+               
+             </div>
+        <!-- ***************************Data from API************************** -->
+            <div id="all_products"></div>
+        </div>
+   </div>
+   
+</body>
+</html>
+<script src="./new_arrivals.js"></script>
+<script src="./new_arrivals_products.js"></script>
+
+
+
+
+

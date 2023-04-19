@@ -1,0 +1,104 @@
+#logo{
+    height: 150px
+}
+header{
+    display:grid;
+    background-color: black;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+}
+body{
+    margin: 0px;
+}
+#header{
+    color: white;
+    font-size:70px; 
+    position: absolute;
+    left: 42%;
+}
+#logout{
+    height: 90px;
+    position: absolute;
+    right: 2%;
+}
+div input{
+    font-size: 20px;
+    padding: 1%;
+    margin: 1%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    border-radius: 30px;
+}
+div input:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+div input:nth-last-child(1){
+    background-color: rgba(255, 0, 0, 0.717);
+}
+div input:nth-last-child(1):hover{
+    background-color: rgb(255, 115, 0);
+    cursor: pointer;
+}
+h1{
+    margin: 1%;
+    /* padding: 10px; */
+}
+hr{
+    border: 3px dotted;
+}
+#ADD{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3%;
+}
+#sample{
+
+    display: flex;
+    justify-content: space-around;
+}
+#sample img{
+    height: 300px;
+}
+#searchQ{
+    font-size: 20px;
+    padding: 1%;
+    margin: 1%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    width: 95%;
+    border-radius: 30px;
+}
+#searchQ:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+#searchButton{
+    position:relative;
+    top:-65px;
+    left: 1810px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#searchButton:hover{
+    color: rgb(255, 115, 0)
+}
+#SearchedProducts div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+#SearchedProducts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#SearchedProducts img{
+    height:300px;
+}
+#SearchedProducts div{
+    border: 2px dotted;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+}
+.orange{
+    background-color: rgb(255, 115, 0);
+}
